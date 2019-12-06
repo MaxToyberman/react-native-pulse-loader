@@ -47,7 +47,7 @@ export default class LocationPulseLoader extends React.Component {
 	}
 
 	render() {
-		const { size, avatar, avatarBackgroundColor, interval } = this.props;
+		const { size, avatar, avatarBackgroundColor, interval, source } = this.props;
 
 		return (
 			<View style={{
@@ -74,7 +74,7 @@ export default class LocationPulseLoader extends React.Component {
 					}}
 				>
 					<Image
-						source={{ uri: avatar }}
+						source={source}
 						style={{
 							width: size,
 							height: size,
@@ -99,6 +99,7 @@ LocationPulseLoader.propTypes = {
   borderColor: PropTypes.string,
   backgroundColor: PropTypes.string,
   getStyle: PropTypes.func,
+  source: PropTypes.number
 };
 
 LocationPulseLoader.defaultProps = {
