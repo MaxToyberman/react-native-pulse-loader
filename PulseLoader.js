@@ -92,7 +92,6 @@ LocationPulseLoader.propTypes = {
   interval: PropTypes.number,
   size: PropTypes.number,
   pulseMaxSize: PropTypes.number,
-  avatar: PropTypes.string.isRequired,
   avatarBackgroundColor: PropTypes.string,
   pressInValue: PropTypes.number,
   pressDuration: PropTypes.number,
